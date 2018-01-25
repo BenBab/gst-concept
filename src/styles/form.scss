@@ -1,0 +1,47 @@
+table {
+  width: 100%;
+  border-spacing: 0;
+  caption {
+    text-align: left;
+  }
+}
+th, td {
+  text-align: left;
+  border: none;
+  padding: 15px;
+  border-bottom: 1px solid $border-grey;
+}
+.form {
+  .row {
+    text-align: left;
+    border: none;
+    padding: 15px 0;
+    border-top: 1px solid $border-grey;
+  }
+  .first-row {
+    border-top: none;
+  }
+  .last-row {
+    border-bottom: 1px solid $border-grey;
+  }
+  .soft-sub-rows {
+    .row {
+      div[class^="col-"]:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+  .sub-rows {
+    .row {
+      margin-top: -10px;
+      border: none;
+      div[class^="col-"]:first-child {
+        padding-left: 30px;
+      }
+    }
+  }
+  span[class^="icon-"] {
+    cursor: pointer;
+    margin-left: 20px;
+  }
+}

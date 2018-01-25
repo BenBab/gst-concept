@@ -1,0 +1,98 @@
+header {
+  background-color: $black;
+  height: 50px;
+  line-height: 50px;
+  padding: 15px 30px;
+  color: white;
+}
+.logo {
+  float: right;
+  height: 40px;
+}
+.holder-name {
+  float: left;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.user-name {
+  float: right;
+  font-size: 16px;
+}
+.menu {
+  line-height: 40px;
+  height: 40px;
+  box-shadow: 0 1px 1px #999;
+  background-color: white;
+  a {
+    text-decoration: none;
+  }
+}
+.inner-menu {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  a:hover {
+    color: black;
+  }
+  .action-bar {
+    float: right;
+    margin-right: 30px;
+    .soft-button {
+      margin-left: 5px;
+    }
+  }
+}
+.back-title {
+  position: absolute;
+  left: -100px;
+  &:before {
+    content: '<';
+  }
+}
+.page-title {
+  padding-left: 30px;
+  border-left: 1px solid $border-grey;
+}
+.menu-tabs {
+  margin-left: 100px;
+}
+.menu-tab {
+  margin: 0 25px;
+  padding-bottom: 8px;
+  &.active, &:hover {
+    border-bottom: 3px solid $bg-action;
+  }
+}
+.main {
+  box-sizing: border-box;
+  width: 1100px;
+  margin: 15px auto;
+  padding: 30px;
+  box-shadow: 0 1px 1px #999;
+  background-color: white;
+}
+.bottom-bar {
+  @extend .clearfix;
+  margin-top: 15px;
+  span {
+    float: left;
+    margin-right: 5px;
+  }
+  .icon-checkmark {
+    margin-top: 4px;
+    font-size: 20px;
+    opacity: 0;
+    transition: 2s opacity;
+    &.visible {
+      opacity: 1;
+      transition: 2s opacity;
+    }
+  }
+  &_align-right {
+    span {
+      float: right;
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+}

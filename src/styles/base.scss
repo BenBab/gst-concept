@@ -1,0 +1,76 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  margin: 0;
+  font-family: 'Microsoft Yahei';
+  background-color: #f1f1f1;
+  color: #95a1a9;
+}
+h1 {
+  font-size: 20px;
+  line-height: 40px;
+}
+label, input[type=radio], input[type=checkbox] {
+  cursor: pointer;
+}
+
+p{
+  font-family: 'Microsoft Yahei';
+  font-size: 12px;
+}
+
+.button {
+  padding: 5px 10px;
+  border: 1px solid $border-grey;
+  background-color: $bg-action;
+  color: white;
+  cursor: pointer;
+}
+
+.soft-button {
+  padding: 2px 8px;
+  border: 1px solid $border-grey;
+  border-radius: 5px;
+  background-color: $bg-action;
+  color: white;
+  cursor: pointer;
+}
+
+.wide-button {
+  padding: 5px 10px;
+  border: 1px solid $border-grey;
+  background-color: $bg-action;
+  color: white;
+  width: 200px;
+  cursor: pointer;
+}
+
+
+
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.hide {
+  display: none;
+}
+.unvisible {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.icon-checkmark {
+  color: green;
+}
